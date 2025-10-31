@@ -6,7 +6,7 @@ import { Genero } from './genero';
 
 @Module({
   imports: [
-    TypeOrmModule.forFeature([Genero])
+    TypeOrmModule.forFeature([Genero]),
   ],
   providers: [GeneroService],
   controllers: [GeneroController]

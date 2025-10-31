@@ -1,6 +1,9 @@
 import { Module } from '@nestjs/common';
 import { GeneroModule } from './genero/genero.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { Genero } from './genero/genero';
+import { DocumentoModule } from './documento/documento.module';
+import { ExtensionModule } from './extension/extension.module';
 
 @Module({
   imports: [
@@ -14,8 +17,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       autoLoadEntities: true,
       synchronize: true,
     }),
-    GeneroModule
-  ],
+    GeneroModule,
+    DocumentoModule,
+    ExtensionModule],
   controllers: [],
   providers: [],
 })

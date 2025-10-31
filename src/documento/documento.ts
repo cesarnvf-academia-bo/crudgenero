@@ -1,11 +1,10 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
-export class Genero {
-
+export class Documento {
     @PrimaryGeneratedColumn()
     id: number;
 
     @Column()
-    genero: string;
+    documento: string;
 }
