@@ -1,0 +1,25 @@
+{
+    "genero_id": 1,
+    "documento_id": 1,
+    "extension_id": 1,
+    "paterno":"VINCENTY",
+    "materno":"FUNES",
+    "nombres":"CESAR",
+    "dip":"1234567",
+    "numerocomplementario":"",
+    "fechanacimiento":"2019-01-01",
+    "direccion":"SN",
+    "telefono":"0",
+    "celular":"0",
+    "correo":"demo@gmail.com"
+}
+
+{
+    "persona_id":1,
+    "usuario":"cvincenty",
+    "clave":"123qwe",
+    "rol":"ADMIN",
+}
+
+npm install @nestjs/jwt @nestjs/passport passport passport-jwt bcrypt
+npm install -D @types/passport-jwt @types/bcrypt

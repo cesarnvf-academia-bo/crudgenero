@@ -4,6 +4,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { Genero } from './genero/genero';
 import { DocumentoModule } from './documento/documento.module';
 import { ExtensionModule } from './extension/extension.module';
+import { PersonaModule } from './persona/persona.module';
+import { UsuarioModule } from './usuario/usuario.module';
+import { AutentificacionModule } from './autentificacion/autentificacion.module';
 
 @Module({
   imports: [
@@ -19,7 +22,10 @@ import { ExtensionModule } from './extension/extension.module';
     }),
     GeneroModule,
     DocumentoModule,
-    ExtensionModule],
+    ExtensionModule,
+    PersonaModule,
+    UsuarioModule,
+    AutentificacionModule],
   controllers: [],
   providers: [],
 })

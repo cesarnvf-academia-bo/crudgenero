@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Persona } from "../persona/persona";
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
 export class Extension {
@@ -7,4 +8,7 @@ export class Extension {
 
     @Column()
     extension: string;
+
+    @OneToMany(()=> Persona, persona => persona.extension)
+    personas: Persona[]
 }
